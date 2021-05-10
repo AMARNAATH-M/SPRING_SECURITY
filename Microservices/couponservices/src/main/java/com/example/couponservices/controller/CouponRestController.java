@@ -17,7 +17,7 @@ public class CouponRestController {
         return couponRepo.save(coupon);
     }
 
-    @GetMapping("/coupon/{code}")
+    @GetMapping("/coupons/{code}")
     public Coupon getCoupon(@PathVariable String code) {
         return couponRepo.findByCode(code);
     }
